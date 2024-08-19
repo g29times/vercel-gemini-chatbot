@@ -46,10 +46,13 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 > Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various Google Cloud and authentication provider accounts.
 
 1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
+2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link --yes` https://vercel.com/docs/cli/link
 3. Download your environment variables: `vercel env pull`
 
 ```bash
+npm install -g pnpm
+pnpm add @ai-sdk/google
+
 pnpm install
 pnpm dev
 ```
@@ -57,6 +60,7 @@ pnpm dev
 Your app template should now be running on [localhost:3000](http://localhost:3000/).
 
 ## Authors
+The project belongs to [g29times@github.com](https://github.com/g29times/)
 
 This library is created by [Vercel](https://vercel.com) and [Next.js](https://nextjs.org) team members, with contributions from:
 
