@@ -50,9 +50,14 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 3. Download your environment variables: `vercel env pull`
 
 ```bash
+# node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+nvm install 20
+# pnpm
 npm install -g pnpm
+# google
 pnpm add @ai-sdk/google
-
+# project
 pnpm install
 pnpm dev
 ```
